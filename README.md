@@ -4,7 +4,7 @@ A small web app that looks at a photo of a leaf and tells you which disease it h
 
 I built this to learn how image classification works end to end: exploring the data, training a model from scratch, trying transfer learning, and then putting the result in front of people through a Streamlit app.
 
-Live demo: <add your Streamlit link here>
+Live demo: https://plant-disease-detection-eyehpdcix3jxtv9znmuejs.streamlit.app/
 
 ## What it can do
 
@@ -46,6 +46,8 @@ Please don't use this to decide how to treat a real crop. Check with someone who
 
 ## Run it yourself
 
+Use Python 3.12 (TensorFlow 2.21 doesn't have builds for 3.14 yet).
+
 ```
 git clone https://github.com/MusabAmin1/Plant-disease-detection.git
 cd Plant-disease-detection
@@ -56,7 +58,6 @@ streamlit run app.py
 Files you need in the same folder: `app.py`, `class_names.json` and `plant_disease_mobilenetv2.keras`.
 
 `class_names.json` is the list of class names in the order used during training. The model only outputs numbers, so this file is what turns index 3 into "Potato___Late_blight". If the order changes, the labels will be wrong even though the predictions are right.
-
 
 ## What I want to do next
 
